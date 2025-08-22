@@ -1,0 +1,1694 @@
+object Form1: TForm1
+  Left = 178
+  Top = 115
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'All in One Worksheet'
+  ClientHeight = 531
+  ClientWidth = 484
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020000001000800A80800001600000028000000200000004000
+    0000010008000000000080040000000000000000000000010000000000000000
+    0000000080000080000000808000800000008000800080800000C0C0C000C0DC
+    C000F0CAA600CCFFFF0099FFFF0066FFFF0033FFFF00FFCCFF00CCCCFF0099CC
+    FF0066CCFF0033CCFF0000CCFF00FF99FF00CC99FF009999FF006699FF003399
+    FF000099FF00FF66FF00CC66FF009966FF006666FF003366FF000066FF00FF33
+    FF00CC33FF009933FF006633FF003333FF000033FF00CC00FF009900FF006600
+    FF003300FF00FFFFCC00CCFFCC0099FFCC0066FFCC0066FFCC0033FFCC0000FF
+    CC00FFCCCC00CCCCCC0099CCCC0066CCCC0033CCCC0000CCCC00FF99CC00CC99
+    CC009999CC006699CC003399CC000099CC00FF66CC00CC66CC009966CC006666
+    CC003366CC000066CC00FF33CC00CC33CC009933CC006633CC003333CC000033
+    CC00FF00CC00CC00CC009900CC006600CC003300CC000000CC00FFFF9900CCFF
+    990099FF990066FF990033FF990000FF9900FFCC9900CCCC990099CC990066CC
+    990033CC990000CC9900FF999900CC9999009999990066999900339999000099
+    9900FF669900CC66990099669900666699003366990000669900FF339900CC33
+    990099339900663399003333990000339900FF009900CC009900990099006600
+    99003300990000009900FFFF6600CCFF660099FF660066FF660033FF660000FF
+    6600FFCC6600CCCC660099CC660066CC660033CC660000CC6600FF996600CC99
+    660099996600669966003399660000996600FF666600CC666600996666006666
+    66003366660000666600FF336600CC3366009933660066336600333366000033
+    6600FF006600CC00660099006600660066003300660000006600FFFF3300CCFF
+    330099FF330066FF330033FF330000FF3300FFCC3300CCCC330099CC330066CC
+    330033CC330000CC3300FF993300CC9933009999330066993300339933000099
+    3300FF663300CC66330099663300666633003366330000663300FF333300CC33
+    330099333300663333003333330000333300FF003300CC003300990033006600
+    33003300330000003300CCFF000099FF000066FF000033FF0000FFCC0000CCCC
+    000099CC000066CC000033CC000000CC0000FF990000CC990000999900006699
+    00003399000000990000FF660000CC6600009966000066660000006600003366
+    0000FF330000CC33000099330000663300003333000000330000CC0000009900
+    000066000000330000000000DD000000BB000000AA0000008800000077000000
+    5500000044000000220000DD000000BB000000AA000000880000007700000055
+    00000044000000220000DDDDDD00555555007777770077777700444444002222
+    22001111110077000000550000004400000022000000F0FBFF00A4A0A0008080
+    80000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00E025
+    1F190BF1F1F1F1F0F0EFEFECECEFEFF0F0F0F1F1F1F1F1F0E20B191F25E0E0F9
+    25130B5DF70707EBEBF6F6FFFFFFEBEB075D5DEDECEFECED5D0B1325F9E000DF
+    251F130BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B131F25DF0000E0
+    251F130BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B131F25E00000E1
+    251F190BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B191F25E1000000
+    251F190BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B191F2500000000
+    251F190BECED5DF707EBF6EDECEFF0F1F5EDECEFF0F1F0EF0B191F2500000000
+    251F190BECED5DF7070CECEDECEFF0F1F50019EFF0F1F0EF0B191F2500000000
+    251F190BECED5DF7FB0C0AEDECEFF0F1F519191FF0F1F0EF0B191F2500000000
+    251F190BECED5D13FB0C0AEDECEFF0F1F519191F1FF1F0EF0B191F2500000000
+    251F190BECED5D13FB0C0A0AECEFF0F11319191F1FF1F0EF0B191F2500000000
+    251F190BECED1913FB0C0A0AECEFF0F11319191F1F25F0EF0B191F2500000000
+    251F190BECED1913FB0C0A0A0CFBFB131319191F1F25F0EF0B191F2500000000
+    251F190BECED1913FB0C0A0A0CEFF0131319191F1F25F0EF0B191F2500000000
+    251F190BECED00F1F0EFECED0CEFF01300F5F5F5F5F5F0EF0B191F2500000000
+    251F190BECED00F1F0EFECED0CFBFB1300F5F5F5F5F5F0EF0B191F2500000000
+    251F190BECED00F1F0EFECEDECFBFBF100F5F5F5F5F5F0EF0B191F2500000000
+    251F190BECED5DF1F0EFECED0CFBFB1300F5F5F5F5F1F0EF0B191F2500000000
+    251F190BECED5DF1F0EFECED0CFBFB1300F5F5F5F5F1F0EF0B191F2500000000
+    251F190BECED5DF7F0EFEC0A0CFBFB1313F5F5F5F0F1F0EF0B191F2500000000
+    251F190BECED5DF707EFEC0A0CFBFB1313F5F5EFF0F1F0EF0B191F25000000E1
+    251F190BECED5DF707EBF60A0CFBFB1313EDECEFF0F1F0EF0B191F25E10000E0
+    251F190BECED5DF707EBF6FFEBEB07F75DEDECEFF0F1F0EF0B191F25E00000DF
+    251F130BECED5DF707EBF6FFEBEB07F75DEDECEFF0F1F0EF0B131F25DC00E0DB
+    251F130BF1F1F1F0F0EFEFECECEFEFF0F0F0F1F1F1F1F1F00B131F25DBE0E0F9
+    25190BEFECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EFEC0B1925F9E0E0F9
+    1F190BEFE2ED5DF007EBECFFF6EBECF75DEFECEFF1F1F0E2EC0B191FF9E0E0F9
+    25190BEFECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EFEC0B1925F9E000DF
+    F91F190B0707EBF6FFF6FFFFFFF6F6EB0707F7F75D5DEDED0B191FF9DF0000E1
+    F9251F190B0B0B0B0B0BED5DEBFFFFF6EDF10B0B0B0B0B0B191F25F9E1000000
+    DFF9251F1919191919190B0B0B0B0B0B0B0B1919191919191F25F9DF00000000
+    00DFF9251F1F1F1F1F1F19191919191919191F1F1F1F1F1F25F9DF0000000000
+    000000000000800000018000000180000001C0000003C0000003C0000003C000
+    0003C0000003C0000003C0000003C0000003C0000003C0000003C0000003C000
+    0003C0000003C0000003C0000003C00000038000000180000001800000010000
+    00000000000000000000000000008000000180000001C0000003E0000007}
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pagecontrol1: TPageControl
+    Left = 0
+    Top = 57
+    Width = 484
+    Height = 455
+    ActivePage = tbbFeaturesTab
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object reportTab: TTabSheet
+      Caption = 'Report'
+      ImageIndex = 2
+      object memo1: TMemo
+        Left = 0
+        Top = 0
+        Width = 476
+        Height = 427
+        Align = alClient
+        ScrollBars = ssVertical
+        TabOrder = 0
+      end
+    end
+    object tbbFeaturesTab: TTabSheet
+      Caption = 'TBB Features'
+      object Label16: TLabel
+        Left = 328
+        Top = 48
+        Width = 41
+        Height = 13
+        Caption = 'Partition:'
+      end
+      object GroupBox1: TGroupBox
+        Left = 3
+        Top = 106
+        Width = 470
+        Height = 320
+        Caption = 'Class 5 Features'
+        TabOrder = 9
+        object Label2: TLabel
+          Left = 20
+          Top = 291
+          Width = 31
+          Height = 13
+          Caption = 'Alt#1: '
+        end
+        object Label3: TLabel
+          Left = 188
+          Top = 291
+          Width = 31
+          Height = 13
+          Caption = 'Alt#2: '
+        end
+        object Label1: TLabel
+          Left = 190
+          Top = 13
+          Width = 90
+          Height = 13
+          Caption = 'Bundles Tamplates'
+        end
+        object isCallDisplay: TCheckBox
+          Left = 16
+          Top = 54
+          Width = 97
+          Height = 17
+          Caption = 'Call Display'
+          TabOrder = 1
+        end
+        object isCallAnswer: TCheckBox
+          Left = 16
+          Top = 94
+          Width = 97
+          Height = 17
+          Caption = 'Call Answer'
+          TabOrder = 2
+        end
+        object isCallWaiting: TCheckBox
+          Left = 16
+          Top = 134
+          Width = 97
+          Height = 17
+          Caption = 'Call Waiting'
+          TabOrder = 3
+        end
+        object isUnlistedNumber: TCheckBox
+          Left = 16
+          Top = 254
+          Width = 113
+          Height = 17
+          Caption = 'Unlisted Number'
+          TabOrder = 8
+        end
+        object isCallerIDBlockRelease: TCheckBox
+          Left = 176
+          Top = 54
+          Width = 153
+          Height = 17
+          Caption = 'Caller ID Block Release'
+          TabOrder = 9
+        end
+        object isCallForward: TCheckBox
+          Left = 176
+          Top = 94
+          Width = 97
+          Height = 17
+          Caption = 'Call Forward'
+          TabOrder = 10
+        end
+        object isDoNotDisturb: TCheckBox
+          Left = 340
+          Top = 134
+          Width = 97
+          Height = 17
+          Caption = 'Do Not Disturb'
+          TabOrder = 17
+        end
+        object isCallScreen: TCheckBox
+          Left = 176
+          Top = 134
+          Width = 97
+          Height = 17
+          Caption = 'Call Screen'
+          TabOrder = 11
+        end
+        object is5WayCalling: TCheckBox
+          Left = 176
+          Top = 174
+          Width = 97
+          Height = 17
+          Caption = '5 Way Calling'
+          TabOrder = 12
+        end
+        object isVisualCallWaiting: TCheckBox
+          Left = 176
+          Top = 214
+          Width = 117
+          Height = 17
+          Caption = 'Visual Call Waiting'
+          TabOrder = 13
+        end
+        object isCallTransfer: TCheckBox
+          Left = 176
+          Top = 254
+          Width = 97
+          Height = 17
+          Caption = 'Call Transfer'
+          TabOrder = 14
+        end
+        object isSpeedCall: TCheckBox
+          Left = 340
+          Top = 54
+          Width = 97
+          Height = 17
+          Caption = 'Speed Dial'
+          TabOrder = 15
+        end
+        object isCallerIDBlock: TCheckBox
+          Left = 340
+          Top = 94
+          Width = 97
+          Height = 17
+          Caption = 'Caller ID Block'
+          TabOrder = 16
+        end
+        object isCallHold: TCheckBox
+          Left = 340
+          Top = 174
+          Width = 97
+          Height = 17
+          Caption = 'Call Hold'
+          TabOrder = 18
+        end
+        object isCallTrace: TCheckBox
+          Left = 340
+          Top = 214
+          Width = 97
+          Height = 17
+          Caption = 'Call Trace'
+          TabOrder = 19
+        end
+        object isNCOS: TCheckBox
+          Left = 340
+          Top = 254
+          Width = 53
+          Height = 17
+          Caption = 'NCOS'
+          TabOrder = 20
+          OnClick = isNCOSClick
+        end
+        object isAlternate1: TCheckBox
+          Left = 16
+          Top = 174
+          Width = 97
+          Height = 17
+          Caption = 'Alternate #1'
+          TabOrder = 4
+          OnClick = isAlternate1Click
+        end
+        object isAlternate2: TCheckBox
+          Left = 16
+          Top = 214
+          Width = 97
+          Height = 17
+          Caption = 'Alternate #2'
+          TabOrder = 6
+          OnClick = isAlternate2Click
+        end
+        object Alt1nbr: TEdit
+          Left = 52
+          Top = 287
+          Width = 121
+          Height = 21
+          Enabled = False
+          TabOrder = 5
+          Text = 'Alternate number 1'
+        end
+        object Alt2nbr: TEdit
+          Left = 220
+          Top = 287
+          Width = 121
+          Height = 21
+          Enabled = False
+          TabOrder = 7
+          Text = 'alternate Number 2'
+        end
+        object NCOSBox: TComboBox
+          Left = 392
+          Top = 252
+          Width = 33
+          Height = 21
+          Enabled = False
+          ItemHeight = 13
+          ItemIndex = 0
+          TabOrder = 21
+          Text = '0'
+          Items.Strings = (
+            '0'
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9')
+        end
+        object bundleSelection: TComboBox
+          Left = 163
+          Top = 25
+          Width = 145
+          Height = 21
+          ItemHeight = 13
+          ItemIndex = 0
+          TabOrder = 0
+          Text = 'Basic Bundle'
+          OnDropDown = bundleSelectionDropDown
+          OnSelect = bundleSelectionSelect
+          Items.Strings = (
+            'Basic Bundle'
+            'Power  Bundle (Unlimited)'
+            'Power Bundle'
+            'Ultimate Bundle'
+            'Unlimited Bundle')
+        end
+      end
+      object copyButton: TButton
+        Left = 352
+        Top = 398
+        Width = 113
+        Height = 25
+        Caption = 'Send to Clipboard'
+        TabOrder = 10
+        Visible = False
+        OnClick = copyButtonClick
+      end
+      object resetTBBFeatureButton: TButton
+        Left = 409
+        Top = 1
+        Width = 65
+        Height = 16
+        Caption = 'Reset'
+        TabOrder = 11
+        OnClick = resetTBBFeatureButtonClick
+      end
+      object MainDIDBox: TLabeledEdit
+        Left = 8
+        Top = 64
+        Width = 153
+        Height = 21
+        EditLabel.Width = 45
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Main DID'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 3
+      end
+      object MACAddrBox: TLabeledEdit
+        Left = 168
+        Top = 64
+        Width = 153
+        Height = 21
+        EditLabel.Width = 63
+        EditLabel.Height = 13
+        EditLabel.Caption = 'MAC address'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 4
+      end
+      object DisplayNameBox: TLabeledEdit
+        Left = 168
+        Top = 24
+        Width = 153
+        Height = 21
+        EditLabel.Width = 65
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Display Name'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 1
+      end
+      object radioResi: TRadioButton
+        Left = 60
+        Top = 91
+        Width = 85
+        Height = 17
+        Caption = 'Residencial'
+        Checked = True
+        TabOrder = 6
+        TabStop = True
+      end
+      object RadioComm9: TRadioButton
+        Left = 300
+        Top = 91
+        Width = 117
+        Height = 17
+        Caption = 'Commercial dial #9'
+        TabOrder = 8
+        TabStop = True
+      end
+      object PartitionBox: TComboBox
+        Left = 328
+        Top = 64
+        Width = 145
+        Height = 21
+        Style = csDropDownList
+        DropDownCount = 15
+        ItemHeight = 13
+        Sorted = True
+        TabOrder = 5
+        Items.Strings = (
+          'Brampton'
+          'Burlington'
+          'Burnaby'
+          'Calgary'
+          'Cambridge'
+          'Cooksville'
+          'Edmonton'
+          'Gatineau / Hull'
+          'Halifax'
+          'Hamilton'
+          'Kanata'
+          'Kitchener-Waterloo'
+          'Laval'
+          'London'
+          'Malton'
+          'Mississauga'
+          'Montreal '
+          'New Westminster'
+          'Niagara Falls'
+          'Oakville'
+          'Oshawa'
+          'Ottawa'
+          'Quebec City'
+          'Regina'
+          'Richmond '
+          'St. Catherines'
+          'Stittsville'
+          'Surrey'
+          'Thornhill'
+          'Toronto'
+          'Unionville'
+          'Vancouver'
+          'Vancouver (north)'
+          'Victoria'
+          'Windsor'
+          'Winnipeg')
+      end
+      object RadioComm: TRadioButton
+        Left = 169
+        Top = 91
+        Width = 128
+        Height = 17
+        Caption = 'Commercial #9 supp'
+        TabOrder = 7
+        TabStop = True
+      end
+      object serialBox: TLabeledEdit
+        Left = 328
+        Top = 24
+        Width = 145
+        Height = 21
+        EditLabel.Width = 66
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Serial Number'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 2
+      end
+      object AccountNameBox: TLabeledEdit
+        Left = 8
+        Top = 24
+        Width = 153
+        Height = 21
+        EditLabel.Width = 71
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Account Name'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 0
+      end
+    end
+    object tbbWorkTab: TTabSheet
+      Caption = 'TBB Worksheet'
+      ImageIndex = 3
+      object Label5: TLabel
+        Left = 144
+        Top = 16
+        Width = 80
+        Height = 13
+        Caption = 'Connection type:'
+      end
+      object ispBox: TLabeledEdit
+        Left = 8
+        Top = 32
+        Width = 129
+        Height = 21
+        EditLabel.Width = 25
+        EditLabel.Height = 13
+        EditLabel.Caption = 'ISP:'
+        EditLabel.Font.Charset = DEFAULT_CHARSET
+        EditLabel.Font.Color = clWindowText
+        EditLabel.Font.Height = -11
+        EditLabel.Font.Name = 'MS Sans Serif'
+        EditLabel.Font.Style = [fsBold]
+        EditLabel.ParentFont = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        ParentFont = False
+        TabOrder = 0
+      end
+      object netTopoBox: TLabeledEdit
+        Left = 8
+        Top = 76
+        Width = 129
+        Height = 21
+        EditLabel.Width = 90
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Network Topology:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 2
+      end
+      object connectionTypebox: TComboBox
+        Left = 144
+        Top = 32
+        Width = 153
+        Height = 21
+        ItemHeight = 13
+        TabOrder = 1
+        Items.Strings = (
+          '128k ISDN'
+          '256k ISDN'
+          '512k ISDN'
+          'Cable Extream speed'
+          'Cable High speed'
+          'Cable Lite speed'
+          'Cable Ultra lite speed'
+          'DSL Extream speed'
+          'DSL High speed'
+          'DSL Light speed'
+          'DSL Ultra lite speed'
+          'T1/OC1'
+          'T3/OC3'
+          'Wireless/Satelite ISP'
+          '')
+      end
+      object firmwareBox: TLabeledEdit
+        Left = 144
+        Top = 76
+        Width = 153
+        Height = 21
+        EditLabel.Width = 82
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Firmware version:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 3
+      end
+      object notifyEntetyBox: TLabeledEdit
+        Left = 8
+        Top = 120
+        Width = 129
+        Height = 21
+        EditLabel.Width = 71
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Notify entity IP:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 5
+      end
+      object DSPGroup: TRadioGroup
+        Left = 8
+        Top = 287
+        Width = 129
+        Height = 57
+        Caption = 'DSP version'
+        Items.Strings = (
+          'Loaded'
+          'Not yet Loaded')
+        TabOrder = 11
+      end
+      object statusGroup: TRadioGroup
+        Left = 144
+        Top = 152
+        Width = 161
+        Height = 49
+        Caption = 'Status/Alarm'
+        Columns = 3
+        Items.Strings = (
+          'Green'
+          'Red'
+          'Off')
+        TabOrder = 12
+      end
+      object altPhoneGroup: TRadioGroup
+        Left = 312
+        Top = 227
+        Width = 153
+        Height = 41
+        BiDiMode = bdLeftToRight
+        Caption = 'Tested with alt Phone'
+        Columns = 3
+        Items.Strings = (
+          'Yes'
+          'No'
+          'N/A')
+        ParentBiDiMode = False
+        TabOrder = 16
+      end
+      object telicaGroup: TRadioGroup
+        Left = 8
+        Top = 242
+        Width = 129
+        Height = 41
+        Caption = 'Is in Telica'
+        Columns = 2
+        Items.Strings = (
+          'Yes'
+          'No')
+        TabOrder = 10
+      end
+      object TBBWorkCopyButton: TButton
+        Left = -56
+        Top = 408
+        Width = 75
+        Height = 25
+        Caption = 'copy all'
+        TabOrder = 20
+        Visible = False
+        OnClick = TBBWorkCopyButtonClick
+      end
+      object resetTBBWorkButton: TButton
+        Left = 416
+        Top = 0
+        Width = 59
+        Height = 25
+        Caption = 'Reset'
+        TabOrder = 21
+        OnClick = resetTBBWorkButtonClick
+      end
+      object VoipPstnGroup: TRadioGroup
+        Left = 8
+        Top = 197
+        Width = 129
+        Height = 41
+        Caption = 'Voip/PSTN Switch'
+        Columns = 2
+        Items.Strings = (
+          'Voip'
+          'PSTN')
+        TabOrder = 9
+      end
+      object SystemGroup: TRadioGroup
+        Left = 8
+        Top = 152
+        Width = 129
+        Height = 41
+        Caption = 'System Type'
+        Columns = 2
+        Items.Strings = (
+          'DLink'
+          'Linksys')
+        TabOrder = 8
+        TabStop = True
+      end
+      object modembox: TLabeledEdit
+        Left = 144
+        Top = 120
+        Width = 153
+        Height = 21
+        EditLabel.Width = 107
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Modem Brand && Model'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 6
+      end
+      object MACSerialGroup: TRadioGroup
+        Left = 144
+        Top = 203
+        Width = 161
+        Height = 48
+        Caption = 'MAC/Serial is Matching PCS'
+        Columns = 3
+        Items.Strings = (
+          'Yes'
+          'No'
+          'N/A')
+        TabOrder = 13
+      end
+      object PowerGroup: TRadioGroup
+        Left = 144
+        Top = 255
+        Width = 161
+        Height = 98
+        Caption = 'Powersuply is corect type'
+        Items.Strings = (
+          'Dlink: Yng Yuh '
+          'Linksys: Hopeful - XP25'
+          'B'
+          'Other')
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 14
+      end
+      object PhoneLedGroup: TRadioGroup
+        Left = 312
+        Top = 152
+        Width = 153
+        Height = 73
+        Caption = 'Phone 1&&2 always ON?'
+        Items.Strings = (
+          'Always On'
+          'Always Off'
+          'Normal')
+        TabOrder = 15
+      end
+      object browsGroup: TRadioGroup
+        Left = 312
+        Top = 272
+        Width = 153
+        Height = 41
+        Caption = 'Can brows via TBB'
+        Columns = 2
+        Items.Strings = (
+          'Yes'
+          'No')
+        TabOrder = 17
+      end
+      object PCGetIPGroup: TRadioGroup
+        Left = 312
+        Top = 317
+        Width = 153
+        Height = 41
+        Caption = 'PC is getting an IP'
+        Columns = 2
+        Items.Strings = (
+          'Yes'
+          'No')
+        TabOrder = 18
+      end
+      object sipserialBox: TLabeledEdit
+        Left = 304
+        Top = 120
+        Width = 161
+        Height = 21
+        EditLabel.Width = 66
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Sipura Serial#'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 7
+      end
+      object TBBGetIPGroup: TRadioGroup
+        Left = 312
+        Top = 361
+        Width = 153
+        Height = 41
+        Caption = 'TBB is getting an IP'
+        Columns = 2
+        Items.Strings = (
+          'Yes'
+          'No')
+        TabOrder = 19
+      end
+      object phonesetBox: TLabeledEdit
+        Left = 304
+        Top = 76
+        Width = 161
+        Height = 21
+        EditLabel.Width = 104
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Phone set type/model'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 4
+      end
+    end
+    object dslWorkTab: TTabSheet
+      Caption = 'DSL Worksheet'
+      ImageIndex = 1
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 476
+        Height = 427
+        Align = alClient
+        TabOrder = 0
+        object Label6: TLabel
+          Left = 24
+          Top = 88
+          Width = 66
+          Height = 13
+          Caption = 'Service Type:'
+        end
+        object Label7: TLabel
+          Left = 192
+          Top = 46
+          Width = 50
+          Height = 13
+          Caption = 'Equipment'
+        end
+        object Label8: TLabel
+          Left = 24
+          Top = 245
+          Width = 142
+          Height = 13
+          Caption = 'Has the service ever worked?'
+        end
+        object Label9: TLabel
+          Left = 74
+          Top = 269
+          Width = 92
+          Height = 13
+          Caption = 'Is dialtone present?'
+        end
+        object Label10: TLabel
+          Left = 89
+          Top = 293
+          Width = 77
+          Height = 13
+          Caption = 'Is sync present?'
+        end
+        object Label11: TLabel
+          Left = 46
+          Top = 317
+          Width = 120
+          Height = 13
+          Caption = 'Verified other equipment?'
+        end
+        object Label12: TLabel
+          Left = 37
+          Top = 341
+          Width = 129
+          Height = 13
+          Caption = 'Was test@test successful?'
+        end
+        object Label13: TLabel
+          Left = 20
+          Top = 221
+          Width = 146
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Modem as been Powercycled?'
+        end
+        object Label14: TLabel
+          Left = 33
+          Top = 365
+          Width = 133
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Is GAS a Primus Local line? '
+        end
+        object Label15: TLabel
+          Left = 24
+          Top = 24
+          Width = 71
+          Height = 13
+          Caption = 'Problem Type: '
+        end
+        object Label4: TLabel
+          Left = 84
+          Top = 389
+          Width = 82
+          Height = 13
+          Caption = 'Verified Modem? '
+        end
+        object GASbox: TLabeledEdit
+          Left = 24
+          Top = 62
+          Width = 153
+          Height = 21
+          EditLabel.Width = 107
+          EditLabel.Height = 13
+          EditLabel.Caption = 'Service Number (GAS)'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 1
+        end
+        object ServiceTypeBox: TComboBox
+          Left = 24
+          Top = 104
+          Width = 153
+          Height = 21
+          Style = csDropDownList
+          ItemHeight = 13
+          TabOrder = 3
+          Items.Strings = (
+            '@Biz2m (router)'
+            '@Biz1m (router)'
+            '@Biz1m (modem)'
+            '@1mm (resi)'
+            'Corp DSL West'
+            'Resi DSL West')
+        end
+        object SMS_IPS: TLabeledEdit
+          Left = 24
+          Top = 145
+          Width = 337
+          Height = 21
+          EditLabel.Width = 155
+          EditLabel.Height = 13
+          EditLabel.Caption = 'Nexxia/ESM (IPS/Status/Circuit)'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 5
+        end
+        object dslLoginBox: TLabeledEdit
+          Left = 24
+          Top = 185
+          Width = 193
+          Height = 21
+          EditLabel.Width = 49
+          EditLabel.Height = 13
+          EditLabel.Caption = 'DSL login:'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 6
+        end
+        object GroupBox3: TGroupBox
+          Left = 366
+          Top = 38
+          Width = 105
+          Height = 213
+          Caption = 'Client availability'
+          TabOrder = 7
+          object Label19: TLabel
+            Left = 8
+            Top = 30
+            Width = 45
+            Height = 13
+            Caption = 'From - To'
+          end
+          object availFrom: TLabeledEdit
+            Left = 8
+            Top = 32
+            Width = 81
+            Height = 21
+            EditLabel.Width = 26
+            EditLabel.Height = 13
+            EditLabel.Caption = 'From:'
+            LabelPosition = lpAbove
+            LabelSpacing = 3
+            TabOrder = 8
+            Visible = False
+          end
+          object availTo: TLabeledEdit
+            Left = 8
+            Top = 67
+            Width = 81
+            Height = 21
+            EditLabel.Width = 16
+            EditLabel.Height = 13
+            EditLabel.Caption = 'To:'
+            LabelPosition = lpAbove
+            LabelSpacing = 3
+            TabOrder = 9
+            Visible = False
+          end
+          object CheckMonday: TCheckBox
+            Left = 8
+            Top = 93
+            Width = 81
+            Height = 21
+            Caption = 'Monday'
+            TabOrder = 1
+          end
+          object CheckTuesday: TCheckBox
+            Left = 8
+            Top = 109
+            Width = 81
+            Height = 21
+            Caption = 'Tuesday'
+            TabOrder = 2
+          end
+          object CheckWednesday: TCheckBox
+            Left = 8
+            Top = 128
+            Width = 81
+            Height = 18
+            Caption = 'Wednesday'
+            TabOrder = 3
+          end
+          object CheckThursday: TCheckBox
+            Left = 8
+            Top = 141
+            Width = 81
+            Height = 21
+            Caption = 'Thursday'
+            TabOrder = 4
+          end
+          object CheckFriday: TCheckBox
+            Left = 8
+            Top = 157
+            Width = 81
+            Height = 21
+            Caption = 'Friday'
+            TabOrder = 5
+          end
+          object CheckSaterday: TCheckBox
+            Left = 8
+            Top = 173
+            Width = 81
+            Height = 21
+            Caption = 'Saterday'
+            TabOrder = 6
+          end
+          object CheckSunday: TCheckBox
+            Left = 8
+            Top = 189
+            Width = 81
+            Height = 21
+            Caption = 'Sunday'
+            TabOrder = 7
+          end
+          object AvailTimeBox: TComboBox
+            Left = 8
+            Top = 46
+            Width = 89
+            Height = 21
+            ItemHeight = 13
+            TabOrder = 0
+            Text = '8-5pm'
+            Items.Strings = (
+              '8 - 5pm'
+              '8 - noon'
+              '1 - 6pm'
+              '5 - 9pm')
+          end
+        end
+        object EquipmentBox: TComboBox
+          Left = 192
+          Top = 62
+          Width = 169
+          Height = 21
+          ItemHeight = 13
+          TabOrder = 2
+          Items.Strings = (
+            'Dlink 300I'
+            'Dlink 300G'
+            'G-Net'
+            'Linksys'
+            'Old Speedtouch alcatel'
+            'Cisco 800 (router)'
+            'SpeedTouche 510'
+            'SpeedTouche 516'
+            'SpeedTouche 530'
+            'SpeedStream')
+        end
+        object IP_VPI_VCI: TLabeledEdit
+          Left = 192
+          Top = 104
+          Width = 161
+          Height = 21
+          EditLabel.Width = 61
+          EditLabel.Height = 13
+          EditLabel.Caption = 'IP & VPI / VCI'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 4
+        end
+        object box2: TComboBox
+          Left = 176
+          Top = 241
+          Width = 41
+          Height = 21
+          Hint = 'was service functional prior to outage?'
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 9
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object box3: TComboBox
+          Left = 176
+          Top = 265
+          Width = 41
+          Height = 21
+          Hint = 'if customer lift the hand set do the get a dial tone'
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 10
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object box4: TComboBox
+          Left = 176
+          Top = 289
+          Width = 41
+          Height = 21
+          Hint = 'is the led for the DSL singnal presant green solid'
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 11
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object box5: TComboBox
+          Left = 176
+          Top = 313
+          Width = 41
+          Height = 21
+          Hint = 
+            'Check for fax, bad RJ45 and RJ11, Bad filters Alarm system and s' +
+            'o on.'
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 12
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object box6: TComboBox
+          Left = 176
+          Top = 337
+          Width = 41
+          Height = 21
+          Hint = 
+            'Have customer conenct using test@test account and get the ip of ' +
+            'the conenction. '
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 13
+          OnChange = box6Change
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object testIPbox: TLabeledEdit
+          Left = 293
+          Top = 337
+          Width = 121
+          Height = 21
+          Hint = 
+            'enter the IP address of the test@test conection you made if it a' +
+            's connected successfully'
+          Color = clInactiveCaptionText
+          EditLabel.Width = 64
+          EditLabel.Height = 13
+          EditLabel.Caption = 'test@test IP: '
+          Enabled = False
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 14
+        end
+        object macBox: TLabeledEdit
+          Left = 224
+          Top = 185
+          Width = 137
+          Height = 21
+          EditLabel.Width = 127
+          EditLabel.Height = 13
+          EditLabel.Caption = 'DSL West registered MAC:'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 18
+        end
+        object Button3: TButton
+          Left = 224
+          Top = 207
+          Width = 67
+          Height = 17
+          Caption = 'Add'
+          TabOrder = 19
+          OnClick = Button3Click
+        end
+        object rembutton: TButton
+          Left = 294
+          Top = 207
+          Width = 67
+          Height = 17
+          Caption = 'Remove'
+          Enabled = False
+          TabOrder = 20
+          OnClick = rembuttonClick
+        end
+        object box1: TComboBox
+          Left = 176
+          Top = 217
+          Width = 41
+          Height = 21
+          Hint = 
+            'Modem as been turned off ofr more then 60 seconds and powered ba' +
+            'ck on'
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 8
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object DSLworkcopyButton: TButton
+          Left = 400
+          Top = 1
+          Width = 75
+          Height = 25
+          Caption = 'Copy all'
+          TabOrder = 22
+          Visible = False
+          OnClick = DSLworkcopyButtonClick
+        end
+        object MacList: TListBox
+          Left = 224
+          Top = 225
+          Width = 137
+          Height = 105
+          Style = lbOwnerDrawFixed
+          ItemHeight = 13
+          TabOrder = 21
+          OnDrawItem = MacListDrawItem
+        end
+        object box7: TComboBox
+          Left = 176
+          Top = 361
+          Width = 41
+          Height = 21
+          Hint = 'Line may be with primus or may not be with primus. '
+          Style = csDropDownList
+          ItemHeight = 13
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 15
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object problemBox: TComboBox
+          Left = 101
+          Top = 20
+          Width = 260
+          Height = 21
+          ItemHeight = 13
+          TabOrder = 0
+          Items.Strings = (
+            'no sync'
+            'intermittent sync'
+            'slow speeds'
+            'can'#39't authenticate'
+            'can'#39't connect '
+            'timing out'
+            'Connect can'#39't browse')
+        end
+        object box8: TComboBox
+          Left = 176
+          Top = 385
+          Width = 41
+          Height = 21
+          Style = csDropDownList
+          ItemHeight = 13
+          TabOrder = 16
+          Items.Strings = (
+            'Yes'
+            'No'
+            'N/A')
+        end
+        object TelcoBox: TLabeledEdit
+          Left = 224
+          Top = 384
+          Width = 241
+          Height = 21
+          EditLabel.Width = 109
+          EditLabel.Height = 13
+          EditLabel.Caption = 'Line Provider / Circuit#'
+          LabelPosition = lpAbove
+          LabelSpacing = 3
+          TabOrder = 17
+        end
+        object resetDSLWorkButton: TButton
+          Left = 412
+          Top = 4
+          Width = 57
+          Height = 25
+          Caption = 'Reset'
+          TabOrder = 23
+          OnClick = resetDSLWorkButtonClick
+        end
+      end
+    end
+    object ContactInfoPage: TTabSheet
+      Caption = 'Contact info'
+      ImageIndex = 5
+      object NameBox: TLabeledEdit
+        Left = 16
+        Top = 24
+        Width = 249
+        Height = 21
+        EditLabel.Width = 31
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Name:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 0
+      end
+      object mainPhoneBox: TLabeledEdit
+        Left = 16
+        Top = 64
+        Width = 249
+        Height = 21
+        EditLabel.Width = 105
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Main contact Number:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 1
+      end
+      object AltPhoneBox: TLabeledEdit
+        Left = 16
+        Top = 104
+        Width = 249
+        Height = 21
+        EditLabel.Width = 122
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Alternate contact number:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 2
+      end
+      object emailBox: TLabeledEdit
+        Left = 16
+        Top = 184
+        Width = 249
+        Height = 21
+        EditLabel.Width = 28
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Email:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 4
+      end
+      object mainSpokenBox: TLabeledEdit
+        Left = 16
+        Top = 224
+        Width = 249
+        Height = 21
+        EditLabel.Width = 117
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Main Spoken Language:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 5
+      end
+      object AltSpokenBox: TLabeledEdit
+        Left = 16
+        Top = 264
+        Width = 249
+        Height = 21
+        EditLabel.Width = 136
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Alternate Spoken Language:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 6
+      end
+      object contactInfoCopyButton: TButton
+        Left = 352
+        Top = 112
+        Width = 121
+        Height = 25
+        Caption = 'contactInfoCopyButton'
+        TabOrder = 8
+        Visible = False
+        OnClick = contactInfoCopyButtonClick
+      end
+      object resetContactButton: TButton
+        Left = 352
+        Top = 8
+        Width = 123
+        Height = 25
+        Caption = 'Reset'
+        TabOrder = 7
+        OnClick = resetContactButtonClick
+      end
+      object FaxBox: TLabeledEdit
+        Left = 16
+        Top = 143
+        Width = 249
+        Height = 21
+        EditLabel.Width = 20
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Fax:'
+        LabelPosition = lpAbove
+        LabelSpacing = 3
+        TabOrder = 3
+      end
+    end
+    object TabSheet1: TTabSheet
+      Caption = 'About'
+      ImageIndex = 5
+      object Panel3: TPanel
+        Left = 8
+        Top = 8
+        Width = 225
+        Height = 145
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        ParentColor = True
+        TabOrder = 0
+        object ProgramIcon: TImage
+          Left = 8
+          Top = 8
+          Width = 33
+          Height = 33
+          Picture.Data = {
+            055449636F6E0000010001002020000001000800A80800001600000028000000
+            2000000040000000010008000000000080040000000000000000000000010000
+            0000000000000000000080000080000000808000800000008000800080800000
+            C0C0C000C0DCC000F0CAA600CCFFFF0099FFFF0066FFFF0033FFFF00FFCCFF00
+            CCCCFF0099CCFF0066CCFF0033CCFF0000CCFF00FF99FF00CC99FF009999FF00
+            6699FF003399FF000099FF00FF66FF00CC66FF009966FF006666FF003366FF00
+            0066FF00FF33FF00CC33FF009933FF006633FF003333FF000033FF00CC00FF00
+            9900FF006600FF003300FF00FFFFCC00CCFFCC0099FFCC0066FFCC0066FFCC00
+            33FFCC0000FFCC00FFCCCC00CCCCCC0099CCCC0066CCCC0033CCCC0000CCCC00
+            FF99CC00CC99CC009999CC006699CC003399CC000099CC00FF66CC00CC66CC00
+            9966CC006666CC003366CC000066CC00FF33CC00CC33CC009933CC006633CC00
+            3333CC000033CC00FF00CC00CC00CC009900CC006600CC003300CC000000CC00
+            FFFF9900CCFF990099FF990066FF990033FF990000FF9900FFCC9900CCCC9900
+            99CC990066CC990033CC990000CC9900FF999900CC9999009999990066999900
+            3399990000999900FF669900CC66990099669900666699003366990000669900
+            FF339900CC33990099339900663399003333990000339900FF009900CC009900
+            99009900660099003300990000009900FFFF6600CCFF660099FF660066FF6600
+            33FF660000FF6600FFCC6600CCCC660099CC660066CC660033CC660000CC6600
+            FF996600CC99660099996600669966003399660000996600FF666600CC666600
+            99666600666666003366660000666600FF336600CC3366009933660066336600
+            3333660000336600FF006600CC00660099006600660066003300660000006600
+            FFFF3300CCFF330099FF330066FF330033FF330000FF3300FFCC3300CCCC3300
+            99CC330066CC330033CC330000CC3300FF993300CC9933009999330066993300
+            3399330000993300FF663300CC66330099663300666633003366330000663300
+            FF333300CC33330099333300663333003333330000333300FF003300CC003300
+            99003300660033003300330000003300CCFF000099FF000066FF000033FF0000
+            FFCC0000CCCC000099CC000066CC000033CC000000CC0000FF990000CC990000
+            99990000669900003399000000990000FF660000CC6600009966000066660000
+            0066000033660000FF330000CC33000099330000663300003333000000330000
+            CC0000009900000066000000330000000000DD000000BB000000AA0000008800
+            0000770000005500000044000000220000DD000000BB000000AA000000880000
+            00770000005500000044000000220000DDDDDD00555555007777770077777700
+            44444400222222001111110077000000550000004400000022000000F0FBFF00
+            A4A0A000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000
+            FFFFFF00E0251F190BF1F1F1F1F0F0EFEFECECEFEFF0F0F0F1F1F1F1F1F0E20B
+            191F25E0E0F925130B5DF70707EBEBF6F6FFFFFFEBEB075D5DEDECEFECED5D0B
+            1325F9E000DF251F130BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B13
+            1F25DF0000E0251F130BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B13
+            1F25E00000E1251F190BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B19
+            1F25E1000000251F190BECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EF0B19
+            1F2500000000251F190BECED5DF707EBF6EDECEFF0F1F5EDECEFF0F1F0EF0B19
+            1F2500000000251F190BECED5DF7070CECEDECEFF0F1F50019EFF0F1F0EF0B19
+            1F2500000000251F190BECED5DF7FB0C0AEDECEFF0F1F519191FF0F1F0EF0B19
+            1F2500000000251F190BECED5D13FB0C0AEDECEFF0F1F519191F1FF1F0EF0B19
+            1F2500000000251F190BECED5D13FB0C0A0AECEFF0F11319191F1FF1F0EF0B19
+            1F2500000000251F190BECED1913FB0C0A0AECEFF0F11319191F1F25F0EF0B19
+            1F2500000000251F190BECED1913FB0C0A0A0CFBFB131319191F1F25F0EF0B19
+            1F2500000000251F190BECED1913FB0C0A0A0CEFF0131319191F1F25F0EF0B19
+            1F2500000000251F190BECED00F1F0EFECED0CEFF01300F5F5F5F5F5F0EF0B19
+            1F2500000000251F190BECED00F1F0EFECED0CFBFB1300F5F5F5F5F5F0EF0B19
+            1F2500000000251F190BECED00F1F0EFECEDECFBFBF100F5F5F5F5F5F0EF0B19
+            1F2500000000251F190BECED5DF1F0EFECED0CFBFB1300F5F5F5F5F1F0EF0B19
+            1F2500000000251F190BECED5DF1F0EFECED0CFBFB1300F5F5F5F5F1F0EF0B19
+            1F2500000000251F190BECED5DF7F0EFEC0A0CFBFB1313F5F5F5F0F1F0EF0B19
+            1F2500000000251F190BECED5DF707EFEC0A0CFBFB1313F5F5EFF0F1F0EF0B19
+            1F25000000E1251F190BECED5DF707EBF60A0CFBFB1313EDECEFF0F1F0EF0B19
+            1F25E10000E0251F190BECED5DF707EBF6FFEBEB07F75DEDECEFF0F1F0EF0B19
+            1F25E00000DF251F130BECED5DF707EBF6FFEBEB07F75DEDECEFF0F1F0EF0B13
+            1F25DC00E0DB251F130BF1F1F1F0F0EFEFECECEFEFF0F0F0F1F1F1F1F1F00B13
+            1F25DBE0E0F925190BEFECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EFEC0B
+            1925F9E0E0F91F190BEFE2ED5DF007EBECFFF6EBECF75DEFECEFF1F1F0E2EC0B
+            191FF9E0E0F925190BEFECED5DF707EBF6FFF6EB07F75DEDECEFF0F1F0EFEC0B
+            1925F9E000DFF91F190B0707EBF6FFF6FFFFFFF6F6EB0707F7F75D5DEDED0B19
+            1FF9DF0000E1F9251F190B0B0B0B0B0BED5DEBFFFFF6EDF10B0B0B0B0B0B191F
+            25F9E1000000DFF9251F1919191919190B0B0B0B0B0B0B0B1919191919191F25
+            F9DF0000000000DFF9251F1F1F1F1F1F19191919191919191F1F1F1F1F1F25F9
+            DF0000000000000000000000800000018000000180000001C0000003C0000003
+            C0000003C0000003C0000003C0000003C0000003C0000003C0000003C0000003
+            C0000003C0000003C0000003C0000003C0000003C00000038000000180000001
+            80000001000000000000000000000000000000008000000180000001C0000003
+            E0000007}
+          Stretch = True
+          IsControl = True
+        end
+        object ProductName: TLabel
+          Left = 48
+          Top = 8
+          Width = 87
+          Height = 13
+          Caption = 'All In 1 Worksheet'
+          IsControl = True
+        end
+        object Version: TLabel
+          Left = 48
+          Top = 32
+          Width = 35
+          Height = 13
+          Caption = 'Version'
+          IsControl = True
+        end
+        object Copyright: TLabel
+          Left = 8
+          Top = 56
+          Width = 160
+          Height = 13
+          Caption = 'Copyright: 2006, Pascale Beaulac'
+          IsControl = True
+        end
+        object Comments: TLabel
+          Left = 8
+          Top = 80
+          Width = 136
+          Height = 26
+          Caption = 'Comments: Licence is LGPL, get the latest update from:'
+          WordWrap = True
+          IsControl = True
+        end
+        object Label17: TLabel
+          Left = 8
+          Top = 108
+          Width = 111
+          Height = 13
+          Cursor = crHandPoint
+          Caption = 'http://nissaba.no-ip.org'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlue
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsUnderline]
+          ParentFont = False
+          OnClick = Label17Click
+        end
+        object Label18: TLabel
+          Left = 8
+          Top = 123
+          Width = 120
+          Height = 13
+          Caption = 'In the Dowlnload section.'
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 484
+    Height = 57
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+    object GroupBox2: TGroupBox
+      Left = 0
+      Top = 0
+      Width = 484
+      Height = 57
+      Align = alClient
+      Caption = 'Included Worksheet'
+      TabOrder = 0
+      object Button4: TButton
+        Left = 378
+        Top = 6
+        Width = 105
+        Height = 27
+        Hint = 'Make sure to check mark the worksheet you need to include'
+        Caption = 'Send to Clipboard'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        OnClick = Button4Click
+      end
+      object tbbWorkCheck: TCheckBox
+        Left = 13
+        Top = 32
+        Width = 97
+        Height = 17
+        Caption = 'TBB Worksheet'
+        TabOrder = 1
+        OnClick = tbbWorkCheckClick
+      end
+      object tbbFeatureCheck: TCheckBox
+        Left = 13
+        Top = 16
+        Width = 97
+        Height = 17
+        Caption = 'TBB Feature'
+        TabOrder = 2
+        OnClick = tbbFeatureCheckClick
+      end
+      object DSLWorkCheck: TCheckBox
+        Left = 116
+        Top = 16
+        Width = 97
+        Height = 17
+        Caption = 'DSL Worksheet'
+        TabOrder = 3
+        OnClick = DSLWorkCheckClick
+      end
+      object dialupWorkCheck: TCheckBox
+        Left = 223
+        Top = 32
+        Width = 122
+        Height = 17
+        Caption = 'Dialup Worksheet'
+        Enabled = False
+        TabOrder = 4
+        Visible = False
+      end
+      object resetallbutton: TButton
+        Left = 378
+        Top = 32
+        Width = 105
+        Height = 23
+        Caption = 'Reset All'
+        TabOrder = 5
+        OnClick = resetallbuttonClick
+      end
+      object contactInfoCheck: TCheckBox
+        Left = 223
+        Top = 16
+        Width = 97
+        Height = 17
+        Caption = 'Contact Info'
+        TabOrder = 6
+        OnClick = contactInfoCheckClick
+      end
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 512
+    Width = 484
+    Height = 19
+    Panels = <
+      item
+        Width = 175
+      end
+      item
+        Width = 245
+      end>
+    SimplePanel = False
+    SizeGrip = False
+  end
+end
